@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="vocabulos">
     <h1>Entregas</h1>
     <p><label for="descricao">Descrição: </label><input id="descricao" type="text" v-model="entrega.descricao"/></p>
     <p><label for="dataHoraLimite">Data/hora limite: </label><input id="dataHoraLimite" type="datetime-local" v-model="entrega.dataHoraLimite"/></p>
