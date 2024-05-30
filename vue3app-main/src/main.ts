@@ -8,7 +8,7 @@ import './assets/main.css'
 
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://8080-mineda-springboot3app-g9ny0bwvgyx.ws-us106.gitpod.io/';
+axios.defaults.baseURL = 'https://8080-laaridiniz-springbootvu-9lp0o90nh4k.ws-us114.gitpod.io';
 
 const app = createApp(App)
 

@@ -13,7 +13,8 @@ import HelloWorld from './components/HelloWorld.vue'
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/gerencie-vocabulos">Vocábulos</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/vocabulo">Vocábulo</RouterLink>
       </nav>
     </div>
   </header>
