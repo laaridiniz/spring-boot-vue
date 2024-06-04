@@ -33,13 +33,13 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="vocabulo in vocabulos">
-          <td>{{  }}</td>
-          <td>{{  }}</td>
-          <td>{{  }}</td>
-          <td>{{  }}</td>
-          <td>{{  }}</td>
-          <td>{{  }}</td>
+        <tr v-for="vocabulo in vocabulos" :key="vocabulo.id">
+          <td>{{ vocabulo.id }}</td>
+          <td>{{ vocabulo.termo }}</td>
+          <td>{{ vocabulo.significado }}</td>
+          <td>{{ vocabulo.versao }}</td>
+          <td>{{ vocabulo.dataHoraCadastro }}</td>
+          <td>{{ vocabulo.dataHoraDesativacao }}</td>
         </tr>
       </tbody>
     </table>
