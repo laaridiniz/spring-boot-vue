@@ -17,3 +17,34 @@ Dicas:
 - Em caso de erro por diferença de versões do Java, use o comando "mvn clean" no terminal;
 - Não esqueça de criar o banco de dados antes de executar o backend;
 - Para entradas do tipo "datetime" é possíve utilizar o tipo "datetime-local" de "input" (https://www.w3schools.com/tags/att_input_type_datetime-local.asp).
+
+### Resultados
+
+1. Teste do método GET:
+
+<div align="center">
+  <img width="960" alt="get" src="https://github.com/laaridiniz/spring-boot-vue/assets/86115352/628df8eb-99b5-462b-81b2-e82ca2b5aafc">
+  <br>
+</div>   
+
+2. Cadastro:
+
+<div align="center">
+  <img width="959" alt="cadastro" src="https://github.com/laaridiniz/spring-boot-vue/assets/86115352/8847b408-5457-4171-b802-dbbe0caf133c">
+  <br>
+</div>
+
+3. Consulta:
+
+<div align="center">
+  <img width="960" alt="consulta" src="https://github.com/laaridiniz/spring-boot-vue/assets/86115352/dde93a29-dd8e-439a-ba20-bcecf68081f6">
+  <br>
+</div>
+
+
+4. Listagem:
+
+<div align="center">
+  <img width="959" alt="listagem" src="https://github.com/laaridiniz/spring-boot-vue/assets/86115352/65d01b0c-d75d-4ef9-a3e0-3d3ae4cea604">
+  <br>
+</div>
