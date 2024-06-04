@@ -18,12 +18,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { onMounted,ref } from 'vue';
+import axios from 'axios';
 const nome = ref("Cha Eun Woo");
-
-const usuarios = ref([
-{ id: 1, nome: "usuario 1", senha: "123" },
-{ id: 2, nome: "usuario 2", senha: "456" }
-]);
-
+const usuarios = ref();
+async function atualizar () {
+  usuarios.value = (await axios.get("https://8080-mineda.gitpod.io/usuario")).data;
+}
+onMounted(() => {
+  atualizar();
+});
 </script>
