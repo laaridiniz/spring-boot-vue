@@ -12,8 +12,8 @@
 
     <!-- Campos de entrada para a consulta de vocábulos -->
     <h2>Consultar Vocábulo</h2>
-    <p><label for="consultaTermo">Termo: </label><input id="consultaTermo" type="text" v-model="vocabulo.consultaTermo"/></p>
-    <p><label for="consultaVersao">Versão: </label><input id="consultaVersao" type="number" v-model="vocabulo.consultaVersao"/></p>
+    <p><label for="consultaTermo">Termo: </label><input id="consultaTermo" type="text" v-model="consultaTermo"/></p>
+    <p><label for="consultaVersao">Versão: </label><input id="consultaVersao" type="number" v-model="consultaVersao"/></p>
     <button @click="buscarVocabulos">Consultar</button>
     <p>{{ erro }}</p>
 
@@ -23,21 +23,23 @@
     </div>
     <table v-else>
       <thead>
-        <td>Id</td>
-        <td>Termo</td>
-        <td>Significado</td>
-        <td>Versão</td>
-        <td>Data e hora do cadastro</td>
-        <td>Status</td>
+        <tr>
+          <td>Id</td>
+          <td>Termo</td>
+          <td>Significado</td>
+          <td>Versão</td>
+          <td>Data e hora do cadastro</td>
+          <td>Status</td>
+        </tr>
       </thead>
       <tbody>
-        <tr v-for="vocabulo in vocabulos" :key="vocabulo.id">
-          <td>{{ vocabulo.id }}</td>
-          <td>{{ vocabulo.termo }}</td>
-          <td>{{ vocabulo.significado }}</td>
-          <td>{{ vocabulo.versao }}</td>
-          <td>{{ vocabulo.data_hora_cadastro }}</td>
-          <td>{{ status(vocabulo.data_hora_desativacao) }}</td>
+        <tr v-for="vocabulo in vocabulos">
+          <td>{{  }}</td>
+          <td>{{  }}</td>
+          <td>{{  }}</td>
+          <td>{{  }}</td>
+          <td>{{  }}</td>
+          <td>{{  }}</td>
         </tr>
       </tbody>
     </table>
@@ -46,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-  import { onMounted, ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import axios from 'axios';
 
 // Definição dos dados do vocábulo
@@ -73,7 +75,7 @@ async function incluir() {
   try {
     await axios.post('vocabulo', vocabulo.value);
     limparCampos(); // Limpar os campos após o cadastro
-    buscarVocabulos(); // Atualizar a lista
+    buscarTodosVocabulos(); // Atualizar a lista
   } catch (e) {
     erro.value = (e as Error).message;
   }
